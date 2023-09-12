@@ -2,7 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/* Main entry point */
+/* Main entry point 
+ * Return always 0
+ */
+
 int main(void)
 {
 	int n;
@@ -14,13 +17,13 @@ int main(void)
 	{
 		printf("last digit of %d is %d and is greater than 5\n", n, m);
 	}
-	if (m == 0)
+	else if (m == 0)
 	{
 		printf("last digit of %d is %d and is 0\n", n, m);
 	}
-	if (m < 6 && m != 0)
+	else if (m < 6 && m != 0)
 	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n",n ,m);
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, m);
 	}	
 	return (0);
 }
